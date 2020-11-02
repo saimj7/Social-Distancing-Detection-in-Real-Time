@@ -7,7 +7,7 @@ Social distancing in Real-Time using live video stream/IP camera in OpenCV.
 
 Output       |  Output
 :-------------------------:|:-------------------------:
-![Output](mylib/videos/output.gif?raw=true "Output")  |  ![Output](mylib/videos/test.gif?raw=true "Output")
+![Output](mylib/videos/output.gif?raw=true "Output")  |  ![Output](mylib/videos/output1.gif?raw=true "Output")
 
 - Use case: counting the number of people in the stores/buildings/shopping malls etc., in real-time.
 - Sending an alert to the staff if the people are way over the social distancing limits.
@@ -68,17 +68,14 @@ python run.py
 > Set url = 0 for webcam.
 
 ## Features
-The following is an example of the added features. Note: You can easily on/off them in the config. options (mylib/config.py):
-
-<img src="https://imgur.com/Lr8mdUW.png" width=500>
+The following are examples of the added features. Note: You can easily on/off them in the config. options (mylib/config.py):
 
 ***1. Real-Time alert:***
 - If selected, we send an email alert in real-time. Use case: If the total number of violations (say 10 or 30) exceeded in a store/building, we simply alert the staff.
 - You can set the max. violations limit in config (```Threshold = 15```).
 - This is pretty useful considering the COVID-19 scenario.
-<img src="https://imgur.com/35Yf1SR.png" width=350>
 
-- Note: To setup the sender email, please refer the instructions inside 'mylib/mailer.py'. Setup receiver email in the config.
+> Note: To setup the sender email, please refer the instructions inside 'mylib/mailer.py'. Setup receiver email in the config.
 
 ***2. Threading:***
 - Multi-Threading is implemented in 'mylib/thread.py'. If you ever see a lag/delay in your real-time stream, consider using it.
