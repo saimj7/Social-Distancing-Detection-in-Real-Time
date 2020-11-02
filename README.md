@@ -115,7 +115,7 @@ set ```Thread = True``` in the config.
 - **Option 2**
     - 👯 Clone this repo:
     ```
-    $ git clone https://github.com/saimj7/People-Counting-in-Real-Time.git
+    $ git clone https://github.com/saimj7/Social-Distancing-Detection-in-Real-Time.git
     ```
 
 - **Roll it!**
