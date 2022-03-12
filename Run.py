@@ -38,7 +38,7 @@ if config.USE_GPU:
 
 # determine only the *output* layer names that we need from YOLO
 ln = net.getLayerNames()
-ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+ln = [ln[i - 1] for i in net.getUnconnectedOutLayers()]
 
 # if a video path was not supplied, grab a reference to the camera
 if not args.get("input", False):
